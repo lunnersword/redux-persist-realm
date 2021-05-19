@@ -41,7 +41,7 @@ function openRealm(path = Realm.defaultPath, encryptionKey?: ArrayBuffer | Array
     };
 }
 
-export function createRealmPersistStorage(path: string = null, encryptionKey?: ArrayBuffer | ArrayBufferView | Int8Array) {
+export function createRealmPersistStorage(path: string = Realm.defaultPath, encryptionKey?: ArrayBuffer | ArrayBufferView | Int8Array) {
     const open = openRealm(path, encryptionKey)
 
     async function getItem(key, callback) {
