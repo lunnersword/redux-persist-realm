@@ -1,0 +1,57 @@
+{
+  "name": "redux-persist-realm",
+  "version": "0.0.1",
+  "description": "Realm storage engine for redux persist\"",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write '**/*.js'",
+    "lint": "eslint '**/*.js' --max-warnings 0",
+    "precommit": "lint-staged",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "validate": "npm-run-all -p lint test"
+  },
+  "keywords": [
+    "redux",
+    "redux-persist",
+    "redux-storage",
+    "react-native",
+    "realm"
+  ],
+  "author": "lunnersword <lunnersword@163.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "realm": "*",
+    "redux-persist": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-zeal": "^2.1.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-native": "^3.10.0",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^11.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.0",
+    "react": "^17.0.2",
+    "react-native": "^0.64.1",
+    "realm": "^10.4.1",
+    "redux-persist": "^6.0.0",
+    "testdouble": "^3.16.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setupTests.js"
+  },
+  "lint-staged": {
+    "*.js": "prettier --list-different"
+  }
+}
